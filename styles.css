@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url("font/Norse-Bold.otf");
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.home {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    background-image: url("images/Background.jpg");
+    background-size: cover;
+    flex: 1;
+    position: relative;
+}
+
+.logo-section {
+    position: absolute; 
+    background-color: black;
+    width: 100%;
+}
+
+
+.logo-section .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .odin-logo {
+    height: 150px;
+}
+
+.logo-section .text {
+    font-family: 'NorseBold';
+    color: white;
+    font-size: 92px;
+}
+
+.content {
+    background-color: rgb(236, 236, 236);
+    flex: 2;
+}
+
+.content .text {
+    font-size: 24px;
+    padding: 48px;
+}
