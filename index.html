@@ -20,17 +20,40 @@
         <div class="content">
             <div class="text">
                 <h1>This is not a real online service! You know you need something like this 
-                    in your life to help you realize your deepest dreams. <br> Sign up <i>now</i> to get started. <br><br>
-                    You <i>know</i> you want to.
+                    in your life to help you realize your deepest dreams. <br> Sign up <span class="italic">now</span> to get started. <br><br>
+                    You <span class="italic">know</span> you want to.
                 </h1>
             </div>
             <div class="form">
-                <form action="" method="get">
-                    
+                <h1>Let's do this!</h1>
+                <form id="myform" action="" method="get">
+                    <div class="form-container">
+                        <div class="first-column">
+                            <label for="first_name">FIRST NAME</label><br>
+                            <input type="text" name="first_name" id="first_name">
+                            <br>
+                            <label for="user_mail">EMAIL</label><br>
+                            <input type="email" name="user_mail" id="user_mail">
+                            <br>
+                            <label for="user_password">PASSWORD</label><br>
+                            <input type="password" name="user_password" id="user_password">
+                        </div>
+                        <div class="second-column">
+                            <label for="last_name">LAST NAME</label><br>
+                            <input type="text" name="last_name" id="last_name">
+                            <br>
+                            <label for="user_phone">PHONE NUMBER</label><br>
+                            <input type="number" name="user_phone" id="user_phone">
+                            <br>
+                            <label for="user_password">CONFIRM PASSWORD</label><br>
+                            <input type="password" name="user_password" id="user_password">
+                        </div>
+                    </div>
                 </form>
             </div>
             <div class="buttons">
-
+                <input type="submit" form="myform" value="Create Account">
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>
