@@ -80,6 +80,7 @@ body {
 .form-container {
     display: flex;
     gap: 64px;
+    margin-top: 32px;
 }
 
 .first-column, .second-column {
@@ -90,6 +91,10 @@ body {
 
 .buttons {
     padding: 32px 48px 48px 48px;
+}
+
+.buttons p {
+    margin-top: 30px;
 }
 
 .create-acc {
@@ -104,4 +109,24 @@ body {
 
 .login {
     color: #596D48;
+    font-weight: bold;
 }
+
+.form-container input {
+    height: 30px;
+    width: 300px;
+    border: solid 1px #E5E7EB;
+    border-radius: 5px;
+}
+
+.form-container input:focus {
+    outline: 2.5px solid #0d48c0;
+    box-shadow: 1pt 2pt 5pt 2pt #D3D3D3;
+}
+
+.form-container label {
+    margin-bottom: -15px;
+    color: rgb(114, 114, 114);
+    font-weight: bold;
+}
+
