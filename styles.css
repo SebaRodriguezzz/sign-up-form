@@ -112,17 +112,26 @@ body {
     font-weight: bold;
 }
 
-.form-container input {
+.form-container input, .error:focus:not(:placeholder-shown) {
     height: 30px;
     width: 300px;
-    border: solid 1px #E5E7EB;
+    border: solid 2px #E5E7EB;
     border-radius: 5px;
 }
 
-.form-container input:focus {
+.form-container .error:placeholder-shown {
+    border: solid 2px #ff2a2a;
+}
+
+.form-container input:focus, .form-container .error:focus, .form-container .error:focus:not(:placeholder-shown) {
     outline: 2.5px solid #0d48c0;
     box-shadow: 1pt 2pt 5pt 2pt #D3D3D3;
 }
+
+.form-container .error:focus:placeholder-shown {
+    outline: 2.5px solid #ff2a2a;
+}
+
 
 .form-container label {
     margin-bottom: -15px;
